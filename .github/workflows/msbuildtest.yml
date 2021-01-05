@@ -1,0 +1,15 @@
+name: msbuildtest
+
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-2019
+    steps:
+     - name: install msbuild.exe
+       uses: microsoft/setup-msbuild@v1
+
+     - name: Run msbuild.exe
+       run: msbuild.exe
