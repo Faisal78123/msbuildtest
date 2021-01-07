@@ -1,5 +1,5 @@
 name: msbuildtest
-
+environment: testenvironment
 
 on:
   workflow_dispatch:
